@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 0 40px;
+  
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.15);
+    border-bottom: 1px solid #ffe4ea;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ff4d88;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav a {
+    color: #555;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  
+  .nav a:hover {
+    color: #ff4d88;
+  }

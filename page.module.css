@@ -1,0 +1,251 @@
+/* Container chính của toàn bộ trang */
+.container {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+  background-color: #fffafb; /* Nền hồng siêu nhạt cực nịnh mắt */
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==================== BANNER ==================== */
+.banner {
+  background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%); /* Hiệu ứng chuyển màu hồng cam đào */
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.bannerContent {
+  max-width: 600px;
+}
+
+.bannerTitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.highlight {
+  color: #fff;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  background-clip: text; /* Thêm dòng này vào */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.bannerBtn {
+  background-color: #fff;
+  color: #ff6584; /* Chữ màu hồng đậm */
+  border: none;
+  padding: 12px 35px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 101, 132, 0.3);
+  transition: all 0.3s ease;
+}
+
+.bannerBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 101, 132, 0.5);
+  background-color: #ff6584;
+  color: #fff;
+}
+
+/* ==================== PROMOTIONS (ƯU ĐÃI) ==================== */
+.promotionsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: -40px auto 40px auto; /* Đẩy section lên đè nhẹ lên banner */
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.promoCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.2);
+  border: 1px solid #ffe4e6;
+  transition: transform 0.3s;
+}
+
+.promoCard:hover {
+  transform: translateY(-5px);
+}
+
+.promoIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.promoCard h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: #ff4d6d; /* Tiêu đề màu hồng sen */
+}
+
+.promoCard p {
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  margin: 0;
+}
+
+/* ==================== CATEGORIES (DANH MỤC) ==================== */
+.categoriesSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.categoryBtn {
+  background-color: #fff;
+  color: #ff758f;
+  border: 2px solid #ffb3c1;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.categoryBtn:hover {
+  background-color: #ff758f;
+  color: #fff;
+  border-color: #ff758f;
+}
+
+/* ==================== PRODUCTS (SẢN PHẨM) ==================== */
+.productsSection {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.productsSection h2 {
+  text-align: center;
+  color: #ff4d6d;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Thêm một cái gạch chân hình tim hoặc thanh hồng nhỏ dưới tiêu đề */
+.productsSection h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff758f;
+  border-radius: 2px;
+  margin: 8px auto 0 auto;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.15);
+  border: 1px solid #fff0f3;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(255, 117, 143, 0.25);
+}
+
+.productImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: #fff5f6; /* Nền ảnh phòng trường hợp ảnh trong suốt */
+}
+
+.productName {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+  margin: 15px 0 10px 0;
+  line-height: 1.4;
+  height: 44px; /* Giới hạn chiều cao để các card đều nhau */
+  display: -webkit-box;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* Thêm dòng tiêu chuẩn này vào phía dưới */
+  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff4d6d; /* Giá tiền màu hồng đậm nổi bật */
+  margin: 0 0 12px 0;
+}
+
+.oldPrice {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #b1b1b1;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+/* Thanh hiển thị tiến trình số lượng còn lại */
+.stockInfo {
+  margin-top: auto; /* Đẩy xuống dưới cùng card */
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progressBar {
+  height: 6px;
+  background-color: #ffccd5; /* Nền thanh màu hồng nhạt */
+  border-radius: 10px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tạo hiệu ứng màu đậm cho phần thanh đã bán/còn lại */
+.progressBar::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%; /* Chạy theo % cấu hình ở style inline trong JS */
+  background: linear-gradient(90deg, #ff758f, #ff4d6d);
+  border-radius: 10px;
+}

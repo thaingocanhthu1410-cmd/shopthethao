@@ -1,0 +1,52 @@
+.footer {
+    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    padding: 60px 20px 20px;
+    color: white;
+  }
+  
+  .top {
+    max-width: 1200px;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  
+    gap: 30px;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .desc {
+    line-height: 1.7;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+  }
+  
+  .column a {
+    transition: 0.2s;
+  }
+  
+  .column a:hover {
+    transform: translateX(5px);
+  }
+  
+  .bottom {
+    text-align: center;
+  
+    margin-top: 40px;
+    padding-top: 20px;
+  
+    border-top: 1px solid rgba(255,255,255,0.3);
+  }
